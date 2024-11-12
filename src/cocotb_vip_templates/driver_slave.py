@@ -1,4 +1,5 @@
 """Driver when VIP is slave."""
+
 import typing
 
 import cocotb
