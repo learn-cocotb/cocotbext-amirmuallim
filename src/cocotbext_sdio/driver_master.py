@@ -1,4 +1,5 @@
 """Driver when VIP is bus master."""
+
 import cocotb
 
 

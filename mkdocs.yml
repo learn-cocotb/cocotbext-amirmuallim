@@ -1,11 +1,11 @@
-site_name: "Cocotb VIP templates"
-site_description: "   Template file for creation of cocotb VIP
+site_name: "cocotbext_sdio"
+site_description: "SDIO VIP using Cocotb
 "
-site_url: "https://dyumnin-interns.github.io/cocotb-vip-templates"
+site_url: "https://dyumnin-interns.github.io/cocotbext_sdio"
 repo_url: "https://github.com/dyumnin-interns/cocotb-vip-templates"
 repo_name: "dyumnin-interns/cocotb-vip-templates"
 site_dir: "site"
-watch: [mkdocs.yml, README.md, CONTRIBUTING.md, CHANGELOG.md, src/cocotb_vip_templates]
+watch: [mkdocs.yml, README.md, CONTRIBUTING.md, CHANGELOG.md, src/cocotbext_sdio]
 copyright: Copyright &copy; 2024 Vijayvithal Jahagirdar
 edit_uri: edit/main/docs/
 

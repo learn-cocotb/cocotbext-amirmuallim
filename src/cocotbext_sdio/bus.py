@@ -1,4 +1,5 @@
 """Bus."""
+
 import cocotb
 from cocotb_bus.bus import Bus as BusBaseClass
 

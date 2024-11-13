@@ -3,9 +3,12 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project]
-name = "cocotb-vip-templates"
-description = "Template file for creation of cocotb VIP"
-authors = [{name = "Vijayvithal Jahagirdar", email = "jahagirdar.vs@gmail.com"}]
+name = "cocotbext-sdio"
+description = "SDIO VIP using Cocotb"
+authors = [
+    {name = "Vijayvithal Jahagirdar", email = "jahagirdar.vs@gmail.com"},
+    {name = "Amir Muallim", email = "amirmuallim123@gmail.com"},
+]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
@@ -33,17 +36,17 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://dyumnin-interns.github.io/cocotb-vip-templates"
-Documentation = "https://dyumnin-interns.github.io/cocotb-vip-templates"
-Changelog = "https://dyumnin-interns.github.io/cocotb-vip-templates/changelog"
-Repository = "https://github.com/dyumnin-interns/cocotb-vip-templates"
-Issues = "https://github.com/dyumnin-interns/cocotb-vip-templates/issues"
-Discussions = "https://github.com/dyumnin-interns/cocotb-vip-templates/discussions"
-Gitter = "https://gitter.im/dyumnin-interns/cocotb-vip-templates"
+Homepage = "https://dyumnin-interns.github.io/cocotbext-sdio"
+Documentation = "https://dyumnin-interns.github.io/cocotbext-sdio"
+Changelog = "https://dyumnin-interns.github.io/cocotbext-sdio/changelog"
+Repository = "https://github.com/dyumnin-interns/cocotbext-sdio"
+Issues = "https://github.com/dyumnin-interns/cocotbext-sdio/issues"
+Discussions = "https://github.com/dyumnin-interns/cocotbext-sdio/discussions"
+Gitter = "https://gitter.im/dyumnin-interns/cocotbext-sdio"
 Funding = "https://github.com/sponsors/jahagirdar"
 
 [project.scripts]
-cocotb-vip-templates = "cocotb_vip_templates.cli:main"
+cocotbext-sdio = "cocotbext_sdio.cli:main"
 
 [tool.pdm]
 version = {source = "scm"}
@@ -57,9 +60,9 @@ editable-backend = "editables"
 
 [tool.pdm.dev-dependencies]
 duty = ["duty>=0.10"]
-precommit=["pre-commit>=3.7.1"]
-ci-quality = ["cocotb-vip-templates[duty,docs,quality,typing,security,precommit]"]
-ci-tests = ["cocotb-vip-templates[duty,tests]"]
+precommit = ["pre-commit>=3.7.1"]
+ci-quality = ["cocotbext-sdio[duty,docs,quality,typing,security,precommit]"]
+ci-tests = ["cocotbext-sdio[duty,tests]"]
 docs = [
     "black>=23.9",
     "markdown-callouts>=0.3",

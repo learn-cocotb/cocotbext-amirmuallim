@@ -7,17 +7,32 @@
 [![gitpod](https://img.shields.io/badge/gitpod-workspace-blue.svg?style=flat)](https://gitpod.io/#https://github.com/dyumnin-interns/cocotb-vip-templates)
 [![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#cocotb-vip-templates:gitter.im)
 
-   Template file for creation of cocotb VIP
+  # cocotbext-sdio
 
+The `cocotbext-sdio` project provides a Verification IP (VIP) for the SDIO protocol using Cocotb.
 
-## Package Installation
+## Features
 
-With `pip`:
+- Command transmission
+- Data read/write
+- CRC checking
+
+## Installation
 
 ```bash
-pip install cocotb-vip-templates
+pip install cocotbext-sdio
 ```
+## Usage
+```python
+from cocotbext_sdio import SdioDriver, SdioMonitor
 
-## Package Documents
-* 50 words description of supported protocol (Name, link to std, rev supported etc.)
-* Example of how to use the package in your code.
+driver = SdioDriver(dut, "", dut.clk)
+monitor = SdioMonitor(dut, "", dut.clk)
+```
+## Example Test
+```python
+@cocotb.test()
+async def test_sdio_command(dut):
+    driver = SdioDriver(dut, "", dut.clk)
+    await driver.send_command(0x00, 0x00000000)
+```
