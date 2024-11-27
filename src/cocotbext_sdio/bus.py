@@ -4,8 +4,8 @@ import cocotb
 from cocotb_bus.bus import Bus as BusBaseClass
 
 
-class Bus:
-    """Bus class for?"""
+class SDIOBus:
+    """Bus class for SDIO."""
 
     def __init__(
         self,

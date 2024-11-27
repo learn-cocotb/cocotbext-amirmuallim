@@ -3,7 +3,7 @@
 import cocotb
 
 
-class MasterDriver:
+class SDIOMasterDriver:
     """Protocol driver."""
 
     def __init__(self):

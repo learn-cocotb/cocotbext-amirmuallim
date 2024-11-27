@@ -25,7 +25,7 @@ class PrintCallback:
         """Any other command that is mentioned in VIP document."""
 
 
-class SlaveDriver:
+class SDIOSlaveDriver:
     """Fill This."""
 
     def __init__(self, *, callback: typing.Any = None):
